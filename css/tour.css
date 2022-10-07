@@ -4,7 +4,7 @@
 .tour {
     width: 100vw;
     height: 128rem;
-    background-image: url(tourdateBG.jpg);
+    background-image: url(../tourdateBG.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     padding: 18rem 10rem 10rem;
