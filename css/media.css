@@ -1,0 +1,279 @@
+.app {
+    background-image: url(../sources/Images/MediaBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Members */
+.members {
+    height: 56rem;
+    /* background-image: linear-gradient(to bottom, #484cc1, rgb(4, 4, 41)); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20rem 10rem;
+    display: flex;
+    flex-direction: column;
+}
+.members__title {
+    text-transform: uppercase;
+    font-family: "Bangers", cursive;
+    font-size: 4rem;
+    color: var(--star-color);
+    text-align: center;
+    padding-bottom: 8rem;
+}
+
+.members__body {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.member {
+    flex-basis: 12%;
+    margin: 0 2rem;
+    height: 19rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    position: relative;
+    transition: all linear 0.15s;
+}
+.member__img {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 2rem;
+    transition: all linear 0.15s;
+}
+.member__message {
+    display: none;
+    transition: all linear 0.15s;
+    position: absolute;
+    width: 7.5rem;
+    height: 2.5rem;
+    padding: 3px 1rem;
+    background-color: var(--white-color);
+    border-radius: 1rem;
+    top: 8rem;
+    left: 5rem;
+}
+.member__message::after {
+    position: absolute;
+    bottom: -2.7rem;
+    left: 1rem;
+    content: "";
+    border-style: solid;
+    border-width: 1.5rem 1rem;
+    border-color: var(--white-color) transparent transparent transparent;
+}
+.member:hover .member__message {
+    display: block;
+}
+
+.member:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transform-origin: 0rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+        rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.member__img img {
+    width: 100%;
+    background-image: url(../sources/Images/bandmember.jpg);
+}
+.member__name {
+    text-align: center;
+    color: var(--star-color);
+    font-size: 1.8rem;
+    font-family: "Pacifico", cursive;
+}
+.memlayer {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 105;
+    transition: all linear 1s;
+}
+.layer {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+.memInfo {
+    top: 20%;
+    left: 30%;
+    width: 50rem;
+    height: 30rem;
+    background-color: var(--white-color);
+    border-radius: 1rem;
+    display: flex;
+    overflow: hidden;
+    z-index: 110;
+}
+.memInfo__img {
+    flex-basis: 30%;
+    background-color: var(--white-color);
+    position: relative;
+}
+.memInfo__img img {
+    position: absolute;
+    height: 20.5rem;
+    bottom: 3rem;
+    left: 0rem;
+}
+.memInfo__body {
+    flex-basis: 70%;
+    padding: 5rem 2rem 2rem;
+    position: relative;
+    background-color: #9ad9ea;
+}
+.memInfo__name {
+    font-size: 1.6rem;
+    padding-bottom: 1.6rem;
+    font-family: "Signika Negative", sans-serif;
+}
+.memInfo__desc {
+    font-size: 1.6rem;
+    padding-bottom: 1.6rem;
+    font-family: "Signika Negative", sans-serif;
+}
+.memInfo__aka {
+    font-size: 1.6rem;
+    padding-bottom: 1.6rem;
+    font-family: "Signika Negative", sans-serif;
+}
+.memInfo__dob {
+    font-size: 1.6rem;
+    padding-bottom: 1.6rem;
+    font-family: "Signika Negative", sans-serif;
+}
+.memInfo__btn {
+    color: black;
+    font-size: 3.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+    opacity: 0.7;
+}
+.memInfo__btn:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.unavailable {
+    position: absolute;
+    width: 10rem;
+    left: 10rem;
+    top: 17rem;
+    transform: rotate(3deg);
+    animation: scale 0.8s linear 0.5s infinite alternate;
+}
+/* Media */
+.music__title {
+    position: absolute;
+    left: 14%;
+    top: 6rem;
+    font-size: 3.5rem;
+    color: var(--star-color);
+    font-family: "Bangers", cursive;
+}
+.photo__title {
+    position: absolute;
+    left: 63%;
+    top: 38rem;
+    font-size: 3.5rem;
+    color: var(--star-color);
+    font-family: "Bangers", cursive;
+}
+.video__title {
+    position: absolute;
+    top: 6rem;
+    left: 63%;
+    font-size: 3.5rem;
+    color: var(--star-color);
+    font-family: "Bangers", cursive;
+}
+.media {
+    width: 100%;
+    height: 92rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    position: relative;
+}
+.music {
+    margin-top: 10rem;
+    flex-basis: 35%;
+    position: relative;
+}
+.photo {
+    flex-basis: 65%;
+}
+/* Photos */
+.media__video {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 14rem;
+}
+.media__video video {
+    transition: all linear 0.2s;
+    flex-basis: 30%;
+    width: 30%;
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+        rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.media__video video:hover {
+    transform: scale(1.1);
+    transform-origin: 1rem 1rem;
+    cursor: pointer;
+}
+.media__photo {
+    margin-top: 20rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.media__photo img {
+    transition: all linear 0.2s;
+    margin-bottom: 3rem;
+    border-radius: 1.5rem;
+    flex-basis: 27%;
+    width: 27%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.media__photo img:hover {
+    transform: scale(1.1);
+    transform-origin: 1rem 1rem;
+    cursor: pointer;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+    to {
+        transform: scale(1.5) rotate(3deg);
+    }
+}

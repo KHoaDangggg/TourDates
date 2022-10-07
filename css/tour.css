@@ -1,0 +1,185 @@
+.app {
+    height: 168rem;
+}
+.tour {
+    width: 100vw;
+    height: 128rem;
+    background-image: url(../sources/Images/tourdateBG.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 18rem 10rem 10rem;
+}
+.tour__title {
+    width: 100%;
+    text-align: center;
+    font-size: 6rem;
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-family: "Bangers", cursive;
+}
+.tour__year {
+    margin-top: 13rem;
+    width: 100%;
+}
+.year {
+    width: 100%;
+    text-align: center;
+    font-size: 4.5rem;
+    color: var(--star-color);
+    text-transform: uppercase;
+    font-family: "Kanit", sans-serif;
+}
+.tour__month {
+    width: 100%;
+    margin-top: 6rem;
+}
+.month {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--star-color);
+
+    font-family: "Kanit", sans-serif;
+}
+.tour__list {
+    list-style-type: none;
+    width: 100%;
+    padding: 5rem 10rem 0;
+}
+.tour__list li {
+    margin-bottom: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px dotted rgb(72 71 71 / 70%);
+}
+
+.tour__list li p {
+    color: var(--white-color);
+    font-size: 1.2rem;
+    padding: 4px 0;
+}
+.tour__list li h3 {
+    color: var(--star-color);
+    font-size: 2rem;
+    padding: 4px 0 5px;
+    font-family: "Oswald", sans-serif;
+}
+.buy__btn {
+    margin-top: 2rem;
+    width: 17rem;
+    height: 3.6rem;
+    text-align: center;
+    background-color: var(--white-color);
+    border-radius: 3rem;
+    color: black;
+    font-family: "Kanit", sans-serif;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    line-height: 3.6rem;
+    text-transform: uppercase;
+}
+.buy__btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 3rem 0.3rem var(--star-color);
+}
+.footer {
+    padding-top: 15rem;
+    display: flex;
+    transform: translateY(-10rem);
+    height: 51rem;
+    background-image: linear-gradient(to bottom, #0a0507, #0b0a6e);
+}
+
+/* Modal */
+.modal {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 105;
+    transition: all linear 02s;
+}
+.layer {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+.container {
+    width: 50rem;
+    height: 38rem;
+    background-color: var(--white-color);
+    border-radius: 1rem;
+    display: block;
+    overflow: hidden;
+    z-index: 110;
+    position: relative;
+}
+
+.container__header {
+    width: 100%;
+    height: 4rem;
+    background-color: #5756b1;
+}
+.container__body {
+    padding: 2rem 3rem;
+}
+.container__body p {
+    font-size: 1.4rem;
+    padding: 0.6rem 0;
+}
+.container__body input {
+    width: 100%;
+    padding: 7px;
+}
+.container__body select {
+    padding: 7px;
+    width: 35%;
+}
+.container__body option {
+    text-align: center;
+    padding: 5px;
+}
+.invalid {
+    border: 1.5px solid red;
+    border-radius: 4px;
+}
+.error {
+    display: none;
+    color: red;
+    font-size: 1.4rem;
+    padding: 4px 0;
+}
+.submit {
+    position: absolute;
+    border-radius: 1rem;
+    width: 14rem;
+    height: 4rem;
+    line-height: 4rem;
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: #5756b1;
+    bottom: 3rem;
+    right: 3rem;
+}
+.submit:hover {
+    cursor: pointer;
+}
+.close-form {
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding-top: 0.6rem;
+    padding-right: 1.5rem;
+    color: var(--white-color);
+    font-size: 3rem;
+}
+.close-form:hover {
+    cursor: pointer;
+}
