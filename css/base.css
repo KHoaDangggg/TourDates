@@ -60,7 +60,7 @@ html {
 .header__logo--image {
     padding-top: 7.5em;
     width: 40%;
-    background-image: url(../sources/Images/68-LOGO.png);
+    background-image: url(68-LOGO.png);
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: 0.7rem;
